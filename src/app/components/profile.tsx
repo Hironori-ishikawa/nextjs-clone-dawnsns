@@ -11,7 +11,6 @@ import Loading from "../loading";
 import * as z from 'zod'
 import type { Database } from "../../../lib/database.types";
 import useStore from "../../../store";
-import { Input } from "postcss";
 type Schema = z.infer<typeof schema>
 
 // 入力データの検証ルールを定義

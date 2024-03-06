@@ -29,6 +29,7 @@ const Signup = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({
     // 初期値
     defaultValues: { name: '', email: '', password: '' },
@@ -69,7 +70,7 @@ const Signup = () => {
       }
 
       // 入力フォームクリア
-      // reset()
+      reset()
       setMessage(
         '本登録用のURLを記載したメールを送信しました。メールをご確認の上、メール本文中のURLをクリックして、本登録を行なってください。'
       )
